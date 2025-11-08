@@ -1,0 +1,15 @@
+# Core backend dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+pandas==2.2.2
+scikit-learn==1.5.2
+requests==2.32.3
+
+streamlit==1.39.0
+
+numpy==1.26.4
+scipy==1.13.1
+
+black==24.8.0

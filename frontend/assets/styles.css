@@ -1,0 +1,26 @@
+:root{--bg:#0b1020;--card:#121a33;--ink:#e7ecff;--muted:#9fb0ff;--accent:#8b5cf6;--accent2:#22d3ee;--chip:#1a2447}
+.stApp{background:radial-gradient(1200px 600px at 10% -10%,#1b2550 0%,transparent 60%),linear-gradient(180deg,#0a0f22 0%,#0b1020 100%)}
+.elegant-header{font-size:28px;color:var(--ink);font-weight:700;letter-spacing:.2px;margin-bottom:8px}
+.subtle{color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.card{background:linear-gradient(180deg,#0f1630,#0b1229);border:1px solid #1e2a57;border-radius:20px;padding:18px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.title{display:flex;align-items:center;gap:12px}
+.name{font-weight:800;font-size:18px;color:#fff}
+.handle{font-size:13px;color:var(--muted)}
+.meta{font-size:13px;color:var(--muted)}
+.score{margin-left:auto;text-align:right}
+.score .val{font-size:28px;font-weight:900;background:linear-gradient(180deg,var(--accent2),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+/* Add standard background-clip for compatibility */
+.score .val{background-clip:text}
+.bio{color:#d9e1ff;font-size:14px;margin-top:10px}
+.bar{height:8px;border-radius:10px;background:#1b2750;overflow:hidden}
+.bar>span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transform-origin:left;animation:grow .9s ease both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.button{margin-top:12px;background:linear-gradient(90deg,var(--accent),var(--accent2));padding:10px 14px;border-radius:14px;color:#0a0f22;font-weight:800;border:none;cursor:pointer;transition:filter .15s ease}
+.button:hover{filter:brightness(1.08)}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.badge{background:var(--chip);border:1px solid #243162;color:#a9baff;font-size:12px;border-radius:999px;padding:6px 10px}
+.section{background:var(--card);padding:16px;border-radius:16px;border:1px solid #1c2650}
+.searchline{display:flex;gap:10px;align-items:center}
+.hint{font-size:12px;color:#90a1ff;margin-top:6px}
